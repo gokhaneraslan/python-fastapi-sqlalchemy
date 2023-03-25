@@ -8,7 +8,12 @@ Building a data API with python fastapi sqlalchemy
 
 Install python 3.9.13 from python/downloads [Python 3.9.13](https://www.python.org/downloads/release/python-3913/).
 
-Create a Python Virtual Environment
+Create a Python Virtual Environment Windows
+```bash
+python -m venv venv
+```
+
+Create a Python Virtual Environment Linux
 ```bash
 python3 -m venv venv
 ```
@@ -31,7 +36,7 @@ pip install -r requirements.txt
 ## Usage
 In Terminal
 ```python
-uvicorn app.main:app --host 127.0.0.1 --port 5000
+uvicorn app.main:app --host 127.0.0.1 --port 5000 --reload
 ```
 
 
